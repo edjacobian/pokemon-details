@@ -16,9 +16,9 @@ try {
  getPokemon();
 
 const render = (pokemonArray) => {
-  for (i = 0; i < pokemonArray.length; i++){
-    const urlArray = pokemonArray[i].url.split(`/`)
-    const urlIdx = urlArray[6]
+  for (let i = 0; i < pokemonArray.length; i++){
+    const urlArray = pokemonArray[i].url.split(`/`);
+    const urlIdx = urlArray[6];
     const ul = document.querySelector(`ul`);
     ul.innerHTML += `<a href=`` data-pokemon-number=`>`${urlIdx}
     <li>${pokemonArray[i].name}</li></a>`
